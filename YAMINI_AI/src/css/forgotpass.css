@@ -1,0 +1,303 @@
+/* Login Page */
+
+.parent{
+    height: 100svh;
+    width: 100%;
+    background-image: url('https://space-club.onrender.com/img/rover.jpg');
+}
+
+/* Media Queries for Responsive Design */
+#loginblock{
+    width:350px;
+    padding-bottom:25px;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    left:800px;
+    top:150px;
+    border-radius:30px;
+    text-align: center;
+  }
+  
+  #loginblock2{
+    width: fit-content;
+    height: 45px;
+    position: relative;
+    top:40px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: large;
+    background-color: transparent;
+  }
+  
+  #loginblock2:focus{
+    outline: none;
+    border-bottom: 5px solid rgb(31, 202, 31);
+    border-radius: 25%;
+  }
+  
+  #loginbutton1{
+    cursor: pointer;
+    background-color:blue;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    height: 45px;
+    width:255px;
+    margin-top:30px; 
+    position: relative;
+    top:20px;
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  #loginbutton1:hover{
+    cursor: pointer;
+    background-color:skyblue;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    height: 45px;
+    width:255px;
+    margin-top:30px;
+    position: relative;
+    top:20px;
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  #loginbutton1:active{
+    cursor: pointer;
+    background-color:greenyellow;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    height: 45px;
+    width:255px;
+    margin-top:30px;
+    position: relative;
+    top:20px;
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  #hr{
+    width:310px;
+    border: 3px solid red;
+    background-color: red;
+    opacity: 1;
+    border-radius:100%;
+    position: relative;
+    top:35px;
+  }
+  /* For screens smaller than 600px (mobile) */
+  @media (max-width: 600px) {
+    #loginblock {
+      background:transparent;
+      backdrop-filter: blur(50px);
+      border-radius:30px;
+      width: 80%; /* Adjust width for mobile */
+      left: 50%; /* Center align horizontally */
+      transform: translateX(-50%); /* Center align horizontally */
+      top: 20%; /* Adjust vertical position */
+    }
+  
+    #loginblock2{
+      margin-top: 10%;
+      border: none;
+      color: white;
+      border-bottom: 2px solid white;
+      text-align: center;
+      font-size: large;
+      background-color: transparent;
+      text-align: center;
+      width: 80%; /* Adjust width for mobile */
+    }
+    #loginblock2:focus{
+      outline: none;
+      border-bottom: 5px solid rgb(31, 202, 31);
+      border-radius: 25%;
+    }
+  
+    #loginblock2 {
+      top: 20px; /* Adjust top spacing */
+    }
+    #loginbutton1{
+      cursor: pointer;
+      background-color:blue;
+      color:white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size:large;
+      height: 45px;
+      width:255px;
+      margin-top:30px;
+      border-radius:10px;
+      border: none;
+      text-align: center;
+    }
+    #loginbutton1 {
+      margin-top: 20px; /* Adjust top margin */
+    }
+  
+    #hr {
+      top: 30px; /* Adjust top spacing */
+    }
+    #hr{
+      width:250px;
+      border: 1px solid red;
+      background-color: red;
+      opacity: 1;
+      border-radius:100%;
+    }
+  }
+  
+  /* For screens larger than 992px (laptop) */
+  @media (min-width: 992px) {
+    #loginblock {
+      background:transparent;
+      backdrop-filter: blur(50px);
+      border-radius:30px;
+      width: 350px; /* Reset width for laptop */
+      left: 800px; /* Reset left position for laptop */
+      top: 150px; /* Reset top position for laptop */
+    }
+  }
+
+  #otpblock{
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+  
+  }
+  
+  #otpwindow{
+    text-align: center;
+    /* display: none; */
+    /* float: left; */
+    border-radius:30px;
+    /* padding-left:25px; */
+    text-align: center;
+    background: white;
+    width:450px;
+    /* height: 150px; */
+    position: relative;
+    top: 200px;
+    left:33%;
+  }
+  
+  #otpnote{
+    padding-top: 10%;
+    font-family: 'Architects Daughter';
+    color: #1e7a46;
+  }
+  
+  .otpinput{
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 20px;
+    /* margin-top:30px; */
+  }
+  
+  .otpinput:focus{
+    outline:none;
+    border-bottom: 3px solid red;
+    /* text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    margin-top:30px; */
+  }
+  
+  .otpbtn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  .otpbtn:hover{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: skyblue;
+    color: black;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  .otpbtn:active{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  /* For smaller screens, adjust layout and styles */
+  /* @media screen and (max-width:1500px) {
+    #newaccountbtn{ */
+      /* position: relative; */
+      /* top: 500px;
+    }
+  } */
+  @media screen and (max-width: 768px) {
+  
+    #otpwindow{
+      width: 90%;
+      left:20;
+    }
+  
+    /* Adjust styles for OTP input fields */
+    .otpinput {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    /* Adjust styles for OTP submit button */
+    .otpbtn {
+      width: 80%;
+      height: 8%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  

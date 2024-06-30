@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .text-to-audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .header {
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .input-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .input-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+  }
+  
+  .voice-options {
+    margin-bottom: 10px;
+  }
+  
+  .voice-options label {
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  
+  .input-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .input-form button:disabled {
+    background-color: #ccc;
+  }
+  
+  .input-form button:hover:enabled {
+    background-color: #feb47b;
+  }
+  
+  .audio-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .audio-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .audio-container audio {
+    width: 100%;
+    /* height: auto; */
+    border-radius: 10px;
+  }
+  

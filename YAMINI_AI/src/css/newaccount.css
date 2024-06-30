@@ -1,0 +1,267 @@
+.parent{
+    height: 100svh;
+    width: 100%;
+    background-image: url('https://space-club.onrender.com/img/space.jpg');
+    background-size: cover;
+}
+
+#createnewaccount{
+    text-align: center;
+    float: left;
+    width:400px;
+    height: 100%;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    position: relative;
+    /* top:10px; */
+    left:150px;
+    padding-bottom:40px;
+    border-radius:40px;
+  }
+  
+  .fileinput{
+    padding-top: 10px;
+    padding-left: 20px;
+    background: white;
+    height: 0px;
+    width:25px;
+    position: relative;
+    bottom: 280px;
+    border: none;
+    border-radius:10px;
+    text-align: center;
+    font-size: medium;
+    display: none;
+  }
+  
+  #editimg{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .newaccount{
+    color: black;
+    height: 45px;
+    width:255px;
+    position: relative;
+    top:40px;
+    border: none;
+    border-radius:10px;
+    text-align: center;
+    font-size: medium;
+  }
+  
+  .newaccount:focus{
+    outline: green;
+    border: 5px solid green;
+  }
+  
+  .newaccountbtn{
+    display: block;
+    background-color:blue;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    height: 45px;
+    width:270px;
+    margin-top:40px;
+    position: relative;
+    left:65px;
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  .newaccountbtn:hover{
+    background-color:skyblue;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    /* height: 45px;
+    width:270px; */
+    /* margin-top:30px; */
+    /* position: relative; */
+    /* top:20px; */
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  .newaccountbtn:active{
+    background-color:greenyellow;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    /* height: 45px;
+    width:270px; */
+    /* margin-top:30px; */
+    /* position: relative; */
+    /* top:20px; */
+    border-radius:10px;
+    border: none;
+    text-align: center;
+  }
+  
+  #otpblock{
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+  
+  }
+  
+  #otpwindow{
+    text-align: center;
+    /* display: none; */
+    /* float: left; */
+    border-radius:30px;
+    /* padding-left:25px; */
+    text-align: center;
+    background: white;
+    width:450px;
+    /* height: 150px; */
+    position: relative;
+    top: 200px;
+    left:33%;
+  }
+  
+  #otpnote{
+    padding-top: 10%;
+    font-family: 'Architects Daughter';
+    color: #1e7a46;
+  }
+  
+  .otpinput{
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 20px;
+    /* margin-top:30px; */
+  }
+  
+  .otpinput:focus{
+    outline:none;
+    border-bottom: 3px solid red;
+    /* text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    margin-top:30px; */
+  }
+  
+  .otpbtn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  .otpbtn:hover{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: skyblue;
+    color: black;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  .otpbtn:active{
+    height: 40px;
+    width: 150px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 12.25px; */
+  }
+  
+  /* For smaller screens, adjust layout and styles */
+  /* @media screen and (max-width:1500px) {
+    #newaccountbtn{ */
+      /* position: relative; */
+      /* top: 500px;
+    }
+  } */
+  @media screen and (max-width: 768px) {
+    #createnewaccount {
+      width: 80%;
+      height: 100%;
+      left: 0;
+      padding: 20px;
+      margin-left: 38px;
+    }
+  
+    #otpwindow{
+      width: 90%;
+      left:20;
+    }
+  
+    /* Adjust styles for input fields */
+    .newaccount {
+      width: 80%;
+      height: 8%;
+      margin-bottom: 5px;
+    }
+  
+    /* Adjust styles for the profile image */
+    #editimg {
+      width: 80px;
+      height: 80px;
+    }
+  
+    /* Adjust styles for the submit button */
+    .newaccountbtn {
+      width: 80%;
+      height: 8%;
+      margin-top: 40px;
+      position: relative;
+      left: 24px;
+    }
+  
+    /* Adjust styles for OTP input fields */
+    .otpinput {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    /* Adjust styles for OTP submit button */
+    .otpbtn {
+      width: 80%;
+      height: 8%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
